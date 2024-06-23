@@ -9,40 +9,64 @@ body {
     font-family: Arial;
 }
 header{
-    background-color: black;
-    display: flex;
+    cursor: pointer;
+    align-items: center;
+    flex-direction: column;
     color: white;
-
-    height: 60px;
     display: flex;
+    background-color: rgb(225, 225, 225);
+}
+.head1{
+    display: flex;
+    position: fixed;
+    cursor: pointer;
     align-items: center;
     background-color: #0f1111;
     color: white;
+    width: 100%;
+   
 }
+
 .img1{
    height: 50px;
-   width: 130px;
+   width: 120px;
    margin-top: 10px;
    margin-bottom: 5px;
    padding: .5rem;
     
 }
-img:hover{
+.img1:hover{
     outline: 1px solid white;
 }
 .location {
     height: 100%;
     font-size: .7rem;
     padding: .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+   margin-top: 4px;
 }
 
 .location:hover {
     outline: 1px solid white;
 }
+.nav-center{
+    cursor: pointer;
+    margin-top: 10px;
+   
+}
 
 .location-icon {
     display: flex;
     align-items: center;
+   margin-bottom: -2px;
+}
+.location-icon i{
+    height: 36px;
+   
+}
+.uloc{
+    padding-left: 30px;
 }
 .search{
     width: 5rem;
@@ -51,28 +75,26 @@ img:hover{
     padding: .5rem;
     border-radius: 5px 0 0 5px;
     outline: none;
+    margin-right:-5px;
+    margin-top: 5px;
 }
 
 .search:focus {
     outline: none;
 }
 
-.search-box {
-    font-size: 1rem;
-    flex-grow: 1;
-    padding: .5rem;
-}
 
-.search-box:focus {
-    outline: none;
-}
+
+
 .search1{
-    width: 15rem;
+    width: 42rem;
     font-size: 1rem;
-   
-    padding: .5rem;
+   margin-right: -3px;
+    padding: .6rem;
     border-radius: 5px 0 0 5px;
     outline: none;
+    margin-top: 5px;
+    outline-color: rgb(210, 208, 208);
 }
 i{
     color: white;
@@ -84,4 +106,268 @@ i {
     border-radius: 0 5px 5px 0;
     padding: .7rem .5rem;
     outline: none;
+}
+#logo{
+    background-color:  #0f1111;
+    font-size: 20px;
+
+}
+.top-text{
+    font-size: 13px;
+}
+.bottom-text{
+    font-size: 15px;
+}
+.india{
+    height: 17px;
+    width: 23px;
+    margin-left: 9px;
+    margin-top: 15px;
+}
+.nav-right:hover{
+    outline: 1px solid white;
+}
+.nav-right{
+    margin-left: 12px;
+    margin-top: 5px;
+}
+.count{
+    font-size: .7rem;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: none;
+   padding-bottom:-50px;
+   margin-bottom: 15px;
+   cursor: pointer;
+}
+
+.count option {
+    color: black;
+}
+.nav-right{
+    display: flex;
+    cursor: pointer;
+}
+.cout:hover .count{
+    display: block;
+}
+.account-option {
+    padding: .5rem .5rem;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.account-option:hover {
+    outline: 1px solid white;
+}
+
+.account-option .top-text {
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+.select-account {
+    font-size: .8rem;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.order-option {
+    padding: .5rem .5rem;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.order-option:hover {
+    outline: 1px solid white;
+}
+
+.order-option .top-text {
+    font-size: .7rem;
+}
+
+.order-option .bottom-text {
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.cart-option {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: .5rem .5rem;
+    cursor: pointer;
+    margin-left: 3px;
+    margin-top:-5px;
+}
+
+.cart-option:hover {
+    outline: 1px solid white;
+}
+
+.cart-logo i {
+    width: 30px;
+    margin-bottom: 9px;
+}
+
+.nav-options {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    background-color: #222f3d;
+    color: white;
+    justify-content: start;
+
+}
+
+.nav-options * {
+    cursor: pointer;
+}
+
+.all-logo {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    padding: .5rem;
+    margin-left: 2rem;
+}
+
+.all-logo:hover {
+    outline: 1px solid white;
+}
+.nav-bottom{
+    background-color: #222f3d;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 72px;
+    font-weight: bold;
+}
+.nav-option{
+    display: flex;
+    align-items: center;
+    margin-left: 0%;
+}
+.select-fresh{
+    font-size: .8rem;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+
+}
+.nav-bottom div{
+    margin-left:20px ;
+    cursor: pointer;
+}
+.select-prime{
+    font-size: .9rem;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+main{
+    background-color: rgb(225, 225, 225);
+    height: 100%;
+    width: 100%;
+    
+}
+.content1{
+    display: flex;
+}
+.pro1{
+    background-color: white;
+    height:415px;
+    width: 395px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.pro2{
+    background-color: white;
+    height: 415px;
+    width: 395px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.pro3{
+    background-color: white;
+    height: 415px;
+    width: 395px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.pro4{
+    background-color: white;
+    height:415px;
+    width: 395px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.text{
+    font-size: 21px;
+    font-weight: bold;
+    padding-left:16px ;
+    padding-top: 5px;
+}
+.dai{
+    height: 315px;
+    width: 334px;
+    padding-left:16px ;
+}
+
+.exp{
+    padding-left: 6px;
+
+}
+.exp:hover{
+    color: red;
+}
+.content2{
+    height: 220px;
+    width: 97%;
+    background-color: white;
+    margin-top: 48px;
+    margin-left: 20px;
+}
+.comp{
+    height: 220px;
+    width: 1469px;
+
+}
+.sign{
+    height: 150px;
+    width: 100%;
+    background-color:white;
+    margin-top: 5%;
+   
+}
+.t-sign{
+    padding-left: 42%;
+}
+.a-sign{
+    padding-left: 42%;
+}
+.button{
+    width: 260px;
+    height: 24px;
+    background-color: #e8ad17;
+    font-weight: 700;
+   border-radius: 7px;
+    border-color: #ffe093;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffe093;
+}
+.new{
+    padding-left: 45%;
 }

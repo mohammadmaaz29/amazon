@@ -2,31 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>var aPageStart = (new Date()).getTime();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity=
 "sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />        
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        <link rel="icon" href="data:image/png;base64,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"
+        type="image/x-icon">
+   
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">       
     <title>Amazon</title>
 </head>
 <body>
-    <header class="">
+    <header >
+     <nav class="head1" >
         <div>
          <img src="amz1.png" class="img1">
         </div>
 
-        <div>
+        
             <div class="location">
-                <p class="top-text">Deliver to</p>
-                <div class="location-icon">
-                    <div class="nav-sprite nav-progressive-attribute" id="nav-packard-glow-loc-icon"></div>
-                    
-                    <i class="fas fa-map-marker-alt" style="color: #ffffff;"></i>
-                    <p class="bottom-text">India</p>
+                <div class="location-icon"> 
+                <i class="fas fa-map-marker-alt" id="logo"style="color: #ffffff"></i>
+                <p class="top-text">Delivering to Borsad 388540</p>
+            </div>
+               <div class="uloc">
+                 <p class="bottom-text">Update location</p>
                 </div>
             </div>
-        </div>    
+          
         
         <div>
             <div class="nav-center">
@@ -37,13 +44,188 @@
                 <option value="">Books</option>
                 <option value="">Computer</option>
              </select>
-             <input type="search" placeholder="Search Amazon.in" class="search1">
+             <input type="text" placeholder="Search Amazon.in" class="search1">
             
              <i class="fa-solid fa-magnifying-glass" 
              style="color: #28416c;">
          </i>
             </div>
         </div>
+
+        <div class="nav-right">
+            <div class="cout">
+                <img src="india.png" alt="flag" class="india">
+            </div>
+               
+                <select name="" id="" class="count">
+                    <option value="lan">EN</option>
+                        <option value="lan">ES</option>
+                        <option value="lan">AR</option>
+                </select>
+            
+        </div>
+
+        <div class="account-option">
+            <p class="top-text">
+                Hello, sign in
+            </p>
+            <select class="select-account">
+                <option value="Account">
+                    Account & Lists
+                </option>
+                <option value="Account">
+                    Account & Lists
+                </option>
+                <option value="Account">
+                    Account & Lists
+                </option>
+            </select>
+        </div>
+
+        <div class="order-option">
+            <p class="top-text">
+                Returns
+            </p>
+            <p class="bottom-text">
+                & Orders
+            </p>
+        </div>
+
+        <div class="cart-option">
+            <div class="cart-logo">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            Cart
+        </div>
+    
+    </nav>
+
+<nav class="nav-bottom">
+    
+    <div class="nav-option">
+        <i class="fa-solid fa-bars" style="background-color: #222f3d; height: 40px; align-items: center; padding-right: -3px;"></i>
+                <p class="list">All</p>
+    </div>
+    <div class="fersh-option">
+       
+        <select class="select-fresh">
+            <option value="Account">
+                Fresh
+            </option>
+            <option value="Account">
+                
+            </option>
+            
+        </select>
+    </div>
+    <div>
+        <p>
+            Amazon miniTV
+        </p>
+    </div>
+    <div>
+        <p>
+           Sell
+        </p>
+    </div>
+    <div>
+        <p>
+            Best Sellers
+        </p>
+    </div>
+    <div>
+        <p>
+           Mobiles
+        </p>
+    </div>
+    <div>
+        <p>
+            Today's Deal
+        </p>
+    </div>
+    <div>
+        <p>
+           Electronics
+        </p>
+    </div>
+    <div class="prime-option">
+       
+        <select class="select-prime">
+            <option value="Account">
+                Prime
+            </option>
+            <option value="Account">
+                
+            </option>
+            
+        </select>
+    </div>
+
+
+    <div>
+        <p>
+           Customer Service
+        </p>
+    </div>
+    <div>
+        <p>
+            Fashion
+        </p>
+    </div>
+    <div>
+        <p>
+            Home & Kitchen
+        </p>
+    </div>
+
+</nav>
+
     </header>
+
+    <main>
+         <div class="content1">   
+            <div class="pro1">
+                <p class="text">Up to 50% off | Diabetes care devices</p><br>
+                <img src="img.jpg.png" alt="" class="dai">
+                <a href="#" class="exp">Explore More</a>
+            </div>
+    
+            <div class="pro2">
+              <p class="text"> Up to 50% off | International brands</p><br>
+                <img src="img2.png" alt="" class="dai"><br>         
+                <a href="#" class="exp">See all offers</a>
+            </div>
+    
+            <div class="pro3">
+                <p class="text"> Up to 60% off | Car, bike parts & accessories</p><br>
+                    <img src="img3.png" alt="" class="dai"><br>
+                    <a href="#" class="exp">See more</a>
+            </div>
+    
+            <div class="pro4">
+                <p class="text"> Customers’ Most-Loved Fashion for you</p><br>
+                    <img src="img4.png" alt="" class="dai"><br>
+                    <a href="#" class="exp">Explore more</a>
+            </div>
+        </div>
+
+        <div class="content2">
+                <img src="img5.png" alt="" class="comp">
+        </div>
+
+        <div class="sign">
+            <hr><br><br>
+            <p class="t-sign">See personalized recommendations</p>
+            <a href="https://sentry.io/answers/" class="a-sign">
+               <button class="button">Sign In</button>
+              </a>
+              <p class="new">New customer? <a href="#">Start here.</a></p>
+              <br><br> <hr>
+            
+        </div>
+    </main>
+    <footer class="foot">
+        
+    </footer>
 </body>
 </html>
